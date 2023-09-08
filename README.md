@@ -22,6 +22,20 @@
     add html
     add css
        
+    tag bar
+    create tag model
+    add sample tags to data.ts
+    food services
+    .add get all tags methods
+    .add get all foods by tag name
+
+    --tags route
+    --show tag result in home component
+    --gentrate a tag comp
+    .add to home compo
+    .add ts
+    .add html
+    .add css 
 
 
 <!-- # Frontend

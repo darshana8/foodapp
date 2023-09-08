@@ -1,4 +1,5 @@
 import { Food } from "./app/components/partial/header/shared/model/Food";
+import { Tag } from "./tag";
 
 
 export const sample_foods:Food[]=[
@@ -6,7 +7,7 @@ export const sample_foods:Food[]=[
         id:'1',
         name:'Pizza',
         price:500,
-        tags:['fastfood','Lunch','brunch','Dinner'],
+        tags:['FastFood','Lunch','brunch','Dinner'],
         favorite:false,
         origins:['Italy'],
         stars:3.0,
@@ -29,7 +30,7 @@ export const sample_foods:Food[]=[
         id:'3',
         name:'Burger',
         price:300,
-        tags:['fastfood','brunch'],
+        tags:['FastFood','brunch'],
         favorite:false,
         origins:['Italy','America'],
         stars:3.5,
@@ -40,7 +41,7 @@ export const sample_foods:Food[]=[
         id:'4',
         name:'French fries',
         price:150,
-        tags:['fastfood','brunch'],
+        tags:['FastFood','brunch'],
         favorite:false,
         origins:['Italy','Japan'],
         stars:3.0,
@@ -62,7 +63,7 @@ export const sample_foods:Food[]=[
         id:'6',
         name:'Pizza',
         price:500,
-        tags:['fastfood','Lunch','brunch','Dinner'],
+        tags:['FastFood','Lunch','brunch','Dinner'],
         favorite:false,
         origins:['India'],
         stars:4.0,
@@ -73,7 +74,7 @@ export const sample_foods:Food[]=[
         id:'7',
         name:'Chicken Biryani',
         price:500,
-        tags:['fastfood','Lunch','brunch','Dinner'],
+        tags:['FastFood','Lunch','brunch','Dinner'],
         favorite:false,
         origins:['Italy'],
         stars:3.0,
@@ -84,7 +85,7 @@ export const sample_foods:Food[]=[
         id:'8',
         name:'Momos',
         price:500,
-        tags:['fastfood','brunch'],
+        tags:['FastFood','brunch'],
         favorite:false,
         origins:['Italy'],
         stars:4.0,
@@ -96,7 +97,7 @@ export const sample_foods:Food[]=[
         id:'9',
         name:'Chicken Nuggets',
         price:600,
-        tags:['fastfood','Lunch','brunch','Dinner'],
+        tags:['FastFood','Lunch','Brunch','Dinner'],
         favorite:false,
         origins:['India'],
         stars:4.0,
@@ -107,7 +108,7 @@ export const sample_foods:Food[]=[
         id:'10',
         name:'Hakka Noodles',
         price:200,
-        tags:['fastfood','Lunch','brunch','Dinner'],
+        tags:['FastFood','Lunch','Brunch','Dinner'],
         favorite:false,
         origins:['Italy','China'],
         stars:5.0,
@@ -118,7 +119,7 @@ export const sample_foods:Food[]=[
         id:'11',
         name:'Full Meal',
         price:750,
-        tags:['Lunch','brunch','Dinner'],
+        tags:['Lunch','Brunch','Dinner'],
         favorite:false,
         origins:['India'],
         stars:4.0,
@@ -136,4 +137,16 @@ export const sample_foods:Food[]=[
         imageUrl:'assets/food-12.jpeg',
         cookTime:'40-50'
     }
+]
+
+export const sample_tags:Tag[]=[
+    {name:'All',count:12},
+    {name:'FastFood',count:4},
+    {name:'Lunch', count:8} ,
+    {name:'Brunch',count:4},
+    {name:'Fry',count:1},
+    {name:'Soup',count:1},
+    {name:'Dinner',count:5}
+
+
 ]
