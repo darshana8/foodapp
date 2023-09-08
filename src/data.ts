@@ -19,7 +19,7 @@ export const sample_foods:Food[]=[
         name:'Meat balls',
         price:400,
         tags:['starter','Lunch','brunch','Dinner'],
-        favorite:false,
+        favorite:true,
         origins:['India'],
         stars:4.0,
         imageUrl:'assets/food-2.jpg',

@@ -7,6 +7,20 @@
     home component
 
     component ===>shared==>model==>Food.ts
+
+    home component
+    food service
+
+    search compo
+    add method to food service
+    add search route
+    show search result in home component
+
+    generate search comp
+    add to home component
+    add ts
+    add html
+    add css
        
 
 
