@@ -38,6 +38,25 @@
     .add css 
 
 
+FOOD PAGE
+1.Add food service
+2.food page componnent
+.route
+ts
+html
+css
+
+cart page
+1.create cartitem model
+2.create cart model
+3.genrate cart service
+4.add cart button to foo page
+5.generate cart page component
+add route
+ts
+html
+css
+
 <!-- # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.

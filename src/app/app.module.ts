@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './components/partial/search/search.component';
 import { TagComponent } from './components/partial/tag/tag.component';
+import { FoodPageComponent } from './components/pages/food-page/food-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    TagComponent
+    TagComponent,
+    FoodPageComponent
   ],
   imports: [
     BrowserModule,

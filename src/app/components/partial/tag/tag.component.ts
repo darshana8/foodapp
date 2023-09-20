@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FoodService } from 'src/app/serives/food.service';
+import { FoodService } from 'src/app/services/food.service';
 import { Tag } from 'src/tag';
 
 @Component({
