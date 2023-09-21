@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './components/partial/search/search.component';
 import { TagComponent } from './components/partial/tag/tag.component';
 import { FoodPageComponent } from './components/pages/food-page/food-page.component';
+import { CartComponent } from './components/pages/cart/cart.component';
+import { TitleComponent } from './components/partial/title/title.component';
+import { NotFoundComponent } from './components/partial/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { FoodPageComponent } from './components/pages/food-page/food-page.compon
     HomeComponent,
     SearchComponent,
     TagComponent,
-    FoodPageComponent
+    FoodPageComponent,
+    CartComponent,
+    TitleComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

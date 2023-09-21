@@ -7,6 +7,6 @@ export class CartItem{
         this.food=food;
     }
 
-    quantity:Number=1;
+    quantity:number=1;
     price:number=this.food.price
 }

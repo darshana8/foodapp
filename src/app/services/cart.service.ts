@@ -8,7 +8,7 @@ import { CartItem } from '../components/partial/header/shared/model/CartItem';
  providedIn: 'root'
 })
 export class CartService {
- private cart:Cart=new Cart()
+ private cart:Cart=this.getCartFromLocalstorage()
 
  private cartSubject:BehaviorSubject<Cart>=new BehaviorSubject(this.cart)
 
@@ -20,10 +20,12 @@ export class CartService {
   return;
 
   this.cart.items.push(new CartItem(food))
+  this.setCartLocalStorage()
  }
 
  removeFromCart(foodId:string):void{
   this.cart.items=this.cart.items.filter(item=>item.food.id!= foodId)
+  this.setCartLocalStorage()
 
  }
  ChangeQuantity(foodId:string,quantity:number){
@@ -32,18 +34,30 @@ export class CartService {
 
   cartItem.quantity=quantity;
   cartItem.price=quantity*cartItem.food.price
+  this.setCartLocalStorage()
  }
 
  clearCart(){
   this.cart=new Cart()
+  this.setCartLocalStorage()
  }
- getCartObservables():Observable<Cart>{
+ getCartObservable():Observable<Cart>{
 return this.cartSubject.asObservable()
  }
  private setCartLocalStorage():void{
  
-  this.cart.totalPrice=this.cart.items.reduce((prevSum,currentItem)=>prevSum + currentItem.price,0)
+  this.cart.totalPrice=this.cart.items.reduce((prevSum,currentItem)=>prevSum + currentItem
+  .price,0)
+  this.cart.totalCount=this.cart.items
+  .reduce((prevSum,currentItem)=>prevSum + currentItem.quantity,0)
+  
   const cartJson=JSON.stringify(this.cart)
   localStorage.setItem('cart',cartJson)
+
+  this.cartSubject.next(this.cart)
+ }
+ private getCartFromLocalstorage():Cart{
+  const cartJson= localStorage.getItem("cart");
+  return cartJson?JSON.parse(cartJson):new Cart();
  }
 }
